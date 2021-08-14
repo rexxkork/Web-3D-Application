@@ -1,0 +1,751 @@
+@font-face {
+    font-family: "cocacola-font";
+    src: url("../assets/fonts/LOKICOLA.TTF");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Barlow', sans-serif;
+}
+
+p,
+a,
+input,
+label,
+textarea,
+span,
+ul,
+li {
+    font-family: 'Barlow', sans-serif;
+}
+
+html,
+body {
+    background: #070707;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+button {
+    outline: none;
+!important;
+}
+
+button:focus {
+    outline: 0;
+!important;
+}
+
+#nav .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav .navbar {
+    background: #070707;
+}
+
+#nav .navbar-brand h1 {
+    font-family: "cocacola-font", sans-serif;
+    float: left;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    transition: 0.5s;
+}
+
+#nav .navbar-brand:hover h1 {
+    text-shadow: 0 0 10px #890405, 0 0 10px #e23233
+}
+
+#nav .navbar-brand h2 {
+    padding-top: 10px;
+    padding-left: 0;
+    float: left;
+    animation-delay: 1s;
+    transition: 1s;
+}
+
+#nav .navbar-brand:hover h2 {
+    color: #f89595;
+}
+
+#nav .navbar-brand p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-left: 5px;
+    animation-delay: 1.5s;
+    transition: 1s;
+}
+
+#nav .navbar-brand:hover p {
+    text-shadow: 0 0 10px #ce5b5b
+}
+
+#nav a,
+ul,
+li {
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navbar .dropdown-item {
+    background: #070707;
+}
+
+#navbar a {
+    border-radius: 10px;
+}
+
+#navbar a:hover {
+    background: #890405;
+    color: white;
+    border-radius: 10px;
+}
+
+#navbar .dropdown-menu {
+    background: #070707;
+    border-radius: 10px;
+}
+
+#intro .container-fluid {
+    height: 75vh;
+    background: white url("../assets/images/coke-long-banner.svg") left bottom;
+}
+
+#intro .container {
+    position: relative;
+    padding-top: 10%;
+    vertical-align: middle;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#intro .col-md-8{
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+    text-shadow: -3px 0 #890405, 0 3px #890405, 3px 0 #890405, 0 -3px #890405;
+}
+
+#intro p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+    text-shadow: -1px 0 #890405, 0 1px #890405, 1px 0 #890405, 0 -1px #890405;
+}
+
+#intro .btn {
+    background: white;
+    color: #890405;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#intro .btn:hover {
+    background: #070707;
+    color: white;
+}
+
+#intro img{
+    max-width: 75%;
+    max-height: 75%;
+}
+
+#products {
+    padding: 80px;
+}
+
+#products .col-md-4 {
+    padding: 0 30px 0;
+}
+
+#products .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+}
+
+#products .container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #181818;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+#products .container .box .name {
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+#products .container .box:hover .name {
+    top: 15px;
+    opacity: 1;
+}
+
+#products .container .box .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: white;
+    background: #890405;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+#products .container .box:hover .btn {
+    bottom: 20px;
+    opacity: 1;
+}
+
+#products .container .box .background-text-top {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    font-size: 80px;
+    font-weight: 900;
+    font-style: italic;
+    transition: 1s;
+}
+
+#products .container .box .background-text-bottom {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    font-size: 75px;
+    font-weight: 900;
+    font-style: italic;
+    transition: 1s;
+}
+
+#products .container .box:hover .background-text-top,
+#products .container .box:hover .background-text-bottom {
+    opacity: 0.06;
+}
+
+#products .container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: white;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 50px);
+}
+
+#products .container .box:hover .circle {
+    transform: translate3d(-50%, -50%, 50px);
+}
+
+#products .container .box .photo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px) rotate(15deg);
+}
+
+#products .container .box:hover .photo {
+    transform: translate3d(-50%, -50%, 70px) rotate(15deg);
+}
+
+#products .container .row .col-md-4:nth-child(1) .box .circle,
+#products .container .row .col-md-4:nth-child(1) .box .btn {
+    background: #007C36;
+}
+
+#products .container .row .col-md-4:nth-child(1) .box .name {
+    text-shadow: #007C36 4px 4px;
+}
+
+#products .container .row .col-md-4:nth-child(2) .box .circle,
+#products .container .row .col-md-4:nth-child(2) .box .btn {
+    background: #550203;
+}
+
+#products .container .row .col-md-4:nth-child(2) .box .name {
+    text-shadow: #780303 4px 4px;
+}
+
+#products .container .row .col-md-4:nth-child(3) .box .circle,
+#products .container .row .col-md-4:nth-child(3) .box .btn {
+    background: #870C20;
+}
+
+#products .container .row .col-md-4:nth-child(3) .box .name {
+    text-shadow: #870C20 4px 4px;
+}
+
+#product-content p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px;
+    line-height: 1.75;
+}
+
+#product-content .col-md-4 {
+    padding: 20px;
+}
+
+#product-content h1 {
+    font-size: 42px;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#product-content .col-md-4:nth-child(1) h1 {
+    text-shadow: #007C36 2px 3px;
+    border-top: solid 2px #72a391;
+}
+
+#product-content .col-md-4:nth-child(1) p {
+    color: #72a391;
+}
+
+#product-content .col-md-4:nth-child(2) h1 {
+    text-shadow: #780303 2px 3px;
+    border-top: solid 2px #a85657;
+}
+
+#product-content .col-md-4:nth-child(2) p {
+    color: #a85657;
+}
+
+#product-content .col-md-4:nth-child(3) h1 {
+    text-shadow: #870C20 2px 3px;
+    border-top: solid 2px #a34454;
+}
+
+#product-content .col-md-4:nth-child(3) p {
+    color: #a34454;
+}
+
+footer {
+    border-top: solid 2px #343434;
+    padding: 30px;
+}
+
+footer .btn {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    transition: 1s;
+    text-align: center;
+    font-size: 14px;
+    background: #550203;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer .btn:hover {
+    font-size: 16px;
+    font-weight: 900;
+    background: white;
+    color: #070707;
+}
+
+footer .follow-btn {
+    padding: 5px 5px 5px;
+    font-size: 50px;
+    transition: 1s;
+    text-decoration: none;
+    color: #afafaf;
+}
+
+footer .follow-btn:hover {
+    font-size: 55px;
+    color: #aa8a8a;
+}
+
+footer p {
+    color: #afafaf;
+}
+
+footer h2 {
+    font-size: 28px;
+    color: #afafaf;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #343434;
+}
+
+footer .collapse-body {
+    width: 70%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    background: white;
+    color: #890405;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cola-intro .container-fluid {
+    height: 70vh;
+    background: white url("../assets/images/coke-long-banner.svg") left bottom;
+}
+
+#cola-intro .container {
+    height: 100%;
+    position: relative;
+    top: 20%;
+}
+
+#cola-intro h1 {
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+
+#cola-intro .container{
+    height: 80%;
+}
+
+#cola-intro .row{
+    height: 100%;
+}
+
+#cola-intro p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+}
+
+#cola-intro .col-md-8{
+    height: 100%;
+    text-align: center;
+}
+
+#cola-intro img{
+    max-width:100%;
+    max-height:100%;
+}
+
+#sprite-intro .container-fluid {
+    height: 70vh;
+    align-content: center;
+    background: linear-gradient(210deg, rgba(55, 73, 117, 1) 0%, rgba(55, 73, 117, 1) 3%, rgba(33, 151, 85, 1) 80%);
+}
+
+#sprite-intro .container {
+    height: 100%;
+    position: relative;
+    top: 20%;
+}
+
+#sprite-intro h1 {
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+
+#sprite-intro p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+}
+
+#sprite-intro .col-md-8{
+    text-align: center;
+}
+
+#sprite-intro img{
+    max-width:100%;
+    max-height:100%;
+}
+
+#costa-intro .container-fluid {
+    height: 70vh;
+    background: #870C20 url("../assets/images/costa-long-banner.svg") left bottom;
+}
+
+#costa-intro .container {
+    height: 100%;
+    position: relative;
+    top: 25%;
+}
+
+#costa-intro .row{
+    height: 60%;
+}
+
+#costa-intro h1 {
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+
+#costa-intro p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+}
+
+#costa-intro .col-md-8{
+    height: 100%;
+    text-align: center;
+}
+
+#costa-intro img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#stage .container-fluid {
+    height: 70vh;
+    background: #070707;
+    /* background: white url("../assets/images/coke-long-banner.svg") left bottom; */
+}
+
+#stage .row {
+    height: 85%;
+}
+
+#stage .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+#stage h1 {
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+
+#stage p {
+    font-size: 24px;
+    color: white;
+    line-height: 1.5;
+}
+
+#controller .container {
+    height: 28vh;
+    background: #1a1a1a;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+#model-selection {
+    position: relative;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 6vh;
+    background: #242424;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#model-selection .col-md-4 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#model-selection .btn {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    bottom: 50%;
+}
+
+#sprite-btn:hover {
+    background: #007C36;
+}
+
+#coke-btn:hover {
+    background: #780303;
+}
+
+#costa-btn:hover {
+    background: #870C20;
+}
+
+#variable-control {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    display: flex;
+}
+
+#variable-control .col-md-4 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 17vh;
+    border-radius: 20px;
+    background: #242424;
+    flex: 1;
+}
+
+#variable-control h1 {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    border-bottom: solid 2px white;
+}
+
+#camera-control .btn {
+    text-align: center;
+    margin: 5px;
+    width: 29%;
+    font-size: 20px;
+    font-weight: 600;
+    background: #2b2b2b;
+    color: white;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+#light-control .btn {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 600;
+    background: #2b2b2b;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+    transition: 0.6s;
+}
+
+#mode-control .btn {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    font-size: 23px;
+    font-weight: 600;
+    background: #2b2b2b;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    transition: 0.6s;
+}
+
+#variable-control .btn:hover {
+    background: white;
+    color: #2b2b2b;
+}
+
+X3D, x3d {
+    position:relative;
+    float:left;
+    cursor:pointer;
+    margin: 0;
+    padding: 0;
+}
+
+X3D:hover,
+x3d:hover,
+.x3dom-canvas:hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.x3dom-canvas {
+    border:none;
+    width:100%;
+    height:100%;
+    float:left;
+    transform: translateY(-500px);
+}
+
+.x3dom-canvas:focus {
+    outline:none;
+}

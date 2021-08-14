@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Coca-Cola 3D Application</title>
+</head>
+<body>
+<header>
+    <section id="nav">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1>CocaCola</h1>
+                    <h2>Museum</h2>
+                    <p>Things Go Better With Coke</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Models
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="models.html?b=sprite">Sprite Can</a></li>
+                                <li><a class="dropdown-item" href="models.html?b=coke">Coke Bottle</a></li>
+                                <li><a class="dropdown-item" href="models.html?b=costa">Costa Cup</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+<section id="intro">
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="display-4">Coca-Cola</h1>
+                    <p class="lead">The world's favourite soft drink since 1886.</p>
+                    <a class="btn" href="models.html">Find Out More</a>
+                </div>
+                <div class="col-md-8">
+                    <img src="assets/images/ShowCase/Coke-Bottle.png" alt="Coke-Bottle">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box" data-tilt>
+                    <h1 class="name">SPRITE</h1>
+                    <h2 class="background-text-top">SPRITE</h2>
+                    <h2 class="background-text-bottom">CAN</h2>
+                    <a href="models.html?b=sprite" class="btn">More Details</a>
+                    <div class="circle"></div>
+                    <img src="assets/images/sprite-can.png" class="photo" alt="sprite-can">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box" data-tilt>
+                    <h1 class="name">COCA-COLA</h1>
+                    <h2 class="background-text-top">COKE</h2>
+                    <h2 class="background-text-bottom">BOTTLE</h2>
+                    <a href="models.html?b=coke" class="btn">More Details</a>
+                    <div class="circle"></div>
+                    <img src="assets/images/cola-bottle.png" class="photo" alt="cola-bottle">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box" data-tilt>
+                    <h1 class="name">COSTA</h1>
+                    <h2 class="background-text-top">COSTA</h2>
+                    <h2 class="background-text-bottom">CUP</h2>
+                    <a href="models.html?b=costa" class="btn">More Details</a>
+                    <div class="circle"></div>
+                    <img src="assets/images/costa-cup.png" class="photo" alt="costa-cup">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="product-content">
+            <div class="col-md-4">
+                <h1>Sprite</h1>
+                <p>Lemon-lime flavored soft drink with a crisp, clean taste that gives you the ultimate cut-through refreshment.</p>
+            </div>
+            <div class="col-md-4">
+                <h1>Coca-Cola</h1>
+                <p>Coca‑Cola Original Taste is the world’s favourite soft drink and has been enjoyed since 1886.<br>
+                    You can find Coca‑Cola Original Taste in a variety of sizes to suit every lifestyle and occasion.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h1>Costa</h1>
+                <p>The Nation's Favourite coffee shop and the largest and fastest growing coffee shop chain in the UK.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn" data-bs-toggle="collapse" href="#contact-collapse" role="button" aria-expanded="false" aria-controls="contact-collapse">
+                    Contact Us
+                </a>
+                <div class="collapse" id="contact-collapse">
+                    <div class="collapse-body">
+                        Rexx Ko<br>
+                        Rexxko@yahoo.com.hk
+                    </div>
+                </div>
+                <p>© Copyright 2021 Rexx Ko - Web 3D Application</p>
+            </div>
+            <div class="col-md-4 offset-4">
+                <h2>Follow Us</h2>
+                <a href="https://twitter.com/ToSaKuMi" class="follow-btn">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://github.com/rexxkork/Web-3D-Application" class="follow-btn">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Framework JS -->
+<script src="js/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"  ></script>
+<script src="js/three.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- Other JS -->
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script src="https://kit.fontawesome.com/0948a67c84.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
